@@ -1,7 +1,9 @@
 
 ![Logo](https://github.com/konradkalemba/fundator/blob/main/logo.png?raw=true)
 
-#### Fundator is a web app that helps companies manage GitHub sponsorships in their organizations
+### Fundator is a web app that helps companies manage GitHub sponsorships in their organizations
+
+![Preview](https://github.com/konradkalemba/fundator/blob/main/preview.png?raw=true)
 
 ## Getting Started
 
