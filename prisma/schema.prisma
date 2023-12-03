@@ -54,13 +54,13 @@ model VerificationToken {
 }
 
 model Organization {
-  id          String        @id @default(cuid())
-  githubId    Int
-  login       String
-  avatarUrl   String?
-  ownerId     String
-  owner       User          @relation(fields: [ownerId], references: [id], onDelete: Cascade)
-  Sponsorship Sponsorship[]
+  id           String        @id @default(cuid())
+  githubId     Int
+  login        String
+  avatarUrl    String?
+  ownerId      String
+  owner        User          @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  sponsorships Sponsorship[]
 }
 
 model Sponsorship {
