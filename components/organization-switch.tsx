@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Organization } from "@prisma/client";
@@ -34,7 +35,16 @@ export function OrganizationSwitch({
       <SelectContent>
         {organizations.map((organization) => (
           <SelectItem key={organization.id} value={organization.id}>
-            {organization.login}
+            <div className="flex items-center gap-1">
+              {organization.avatarUrl && (
+                <img
+                  src={organization.avatarUrl}
+                  className="mr-2 h-4 w-4 rounded-sm"
+                  alt={`${organization.login}'s avatar`}
+                />
+              )}
+              {organization.login}
+            </div>
           </SelectItem>
         ))}
       </SelectContent>
